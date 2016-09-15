@@ -7,10 +7,10 @@
 public class Main {
 	//key is digits of pi after the '.'
 	private static final String KEY = "1415926535897932384626433832795028841971693993751058209749445923"; //first 64 digits
-	private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	private static String toTokenize = "jack";
+	private static final String ALPHABET = "RUXi9EKzAM1lqPB3gDhaSyvH8ZVLO6cNJtY0k4wTC7sbfI5uQendxoWrpF2mGj "; //a-z 0-9 A-Z and a space (the space has to be at the end)
+	private static String toTokenize = "hello my number is 12345";
 	private static String tokenized = "";
-	private static String toDeTokenize = "KEDP";
+	private static String toDeTokenize = "aoqg RUVUrr9n22RKnXgGy7e";
 	private static String deTokenized = "";
 	
 	public static void main(String[] args) {
@@ -21,8 +21,8 @@ public class Main {
 	}
 	
 	public static char[] splitString(String s) {
-		String sUpper = s.toUpperCase();
-		char[] ca = sUpper.toCharArray();
+		//String sUpper = s.toUpperCase();
+		char[] ca = s.toCharArray();
 		/*int i = 0;
 		while(i < ca.length) {
 			System.out.println(ca[i]);
@@ -76,8 +76,8 @@ public class Main {
 			
 			int locationNewChar = y + newKeyNum;
 			
-			if((locationNewChar) >=26) {
-				  locationNewChar = locationNewChar - 26;
+			if((locationNewChar) >=64) {
+				  locationNewChar = locationNewChar - 64; //amount of characters in abc
 			}
 			
 			char newChar = abc[locationNewChar];
@@ -97,7 +97,7 @@ public class Main {
 		}
 		
 		
-		System.out.println("Tokenized value of " + "'" + toTokenize + "'" + " is " + tokenized + ".");
+		System.out.println("Tokenized value of " + "'" + toTokenize + "'" + " is '" + tokenized + "'.");
 		
 		int z = 0;
 		String newKeyString = "";
@@ -157,7 +157,7 @@ public class Main {
 			int locationNewChar = y - newKeyNum;
 			
 			if((locationNewChar) < 0) {
-				  locationNewChar = locationNewChar + 26;
+				  locationNewChar = locationNewChar + 64;
 			}
 			
 			char newChar = abc[locationNewChar];
@@ -177,7 +177,7 @@ public class Main {
 		}
 		
 		
-		System.out.println("De-Tokenized value of " + "'" + toDeTokenize + "'" + " is " + deTokenized + ".");
+		System.out.println("De-Tokenized value of " + "'" + toDeTokenize + "'" + " is '" + deTokenized + "'.");
 		
 		int z = 0;
 		String newKeyString = "";
