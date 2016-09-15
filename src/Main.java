@@ -8,19 +8,18 @@ public class Main {
 	//key is digits of pi after the '.'
 	private static final String KEY = "1415926535897932384626433832795028841971693993751058209749445923"; //first 64 digits
 	private static final String ALPHABET = "RUXi9EKzAM1lqPB3gDhaSyvH8ZVLO6cNJtY0k4wTC7sbfI5uQendxoWrpF2mGj "; //a-z 0-9 A-Z and a space (the space has to be at the end)
-	private static String toTokenize = "hello my number is 12345";
+	private static String toTokenize = "";
 	private static String tokenized = "";
-	private static String toDeTokenize = "aoqg RUVUrr9n22RKnXgGy7e";
+	private static String toDeTokenize = "";
 	private static String deTokenized = "";
 	
-	public static void main(String[] args) {
+	public Main() {
 		
-		jumble(splitString(toTokenize));
-		deJumble(splitString(toDeTokenize));
-
 	}
 	
 	public static char[] splitString(String s) {
+		toTokenize = s;
+		toDeTokenize = s;
 		//String sUpper = s.toUpperCase();
 		char[] ca = s.toCharArray();
 		/*int i = 0;
@@ -66,13 +65,13 @@ public class Main {
 				
 			
 
-			System.out.println("The position of " + ca[x] + " in the alphabet is " + y + ". If the alphabet starts from 0.");
+			//System.out.println("The position of " + ca[x] + " in the alphabet is " + y + ". If the alphabet starts from 0.");
 			//The code above figures out the position of the chars in the alphabet
-			System.out.println(" ");
-			System.out.println("X = " + x + " Y = " + y);
-			System.out.println("newKey[x] = " + newKey[x]);
+			//System.out.println(" ");
+			//System.out.println("X = " + x + " Y = " + y);
+			//System.out.println("newKey[x] = " + newKey[x]);
 			int newKeyNum = Character.getNumericValue(newKey[x]);
-			System.out.println("newKeyNum = " + newKeyNum);
+			//System.out.println("newKeyNum = " + newKeyNum);
 			
 			int locationNewChar = y + newKeyNum;
 			
@@ -84,7 +83,7 @@ public class Main {
 			
 			
 			
-			System.out.println(newChar);
+			//System.out.println(newChar);
 			
 			
 			
@@ -132,8 +131,8 @@ public class Main {
 			
 			
 			int y = 0;
-			System.out.println(abc[y]);
-			System.out.println(toDeJumble[x]);
+			//System.out.println(abc[y]);
+			//System.out.println(toDeJumble[x]);
 			while(abc[y] != toDeJumble[x]) {
 				
 				
@@ -146,13 +145,13 @@ public class Main {
 				
 			
 
-			System.out.println("The position of " + toDeJumble[x] + " in the alphabet is " + y + ". If the alphabet starts from 0.");
+			//System.out.println("The position of " + toDeJumble[x] + " in the alphabet is " + y + ". If the alphabet starts from 0.");
 			//The code above figures out the position of the chars in the alphabet
-			System.out.println(" ");
-			System.out.println("X = " + x + " Y = " + y);
-			System.out.println("newKey[x] = " + newKey[x]);
+			//System.out.println(" ");
+			//System.out.println("X = " + x + " Y = " + y);
+			//System.out.println("newKey[x] = " + newKey[x]);
 			int newKeyNum = Character.getNumericValue(newKey[x]);
-			System.out.println("newKeyNum = " + newKeyNum);
+			//System.out.println("newKeyNum = " + newKeyNum);
 			
 			int locationNewChar = y - newKeyNum;
 			
@@ -164,7 +163,7 @@ public class Main {
 			
 			
 			
-			System.out.println(newChar);
+			//System.out.println(newChar);
 			
 			
 			
