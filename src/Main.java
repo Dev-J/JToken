@@ -2,11 +2,11 @@
 //Currently does not support punctuation/spaces
 //Only supports Strings
 //Does not currently support numerical values
-//To increase the amount of characters it can tokenize use more values of pi. (currently set to 64)
+//To increase the amount of characters it can tokenize use more values of pi. (currently set to 63)
 
 public class Main {
 	//key is digits of pi after the '.'
-	private static final String KEY = "1415926535897932384626433832795028841971693993751058209749445923"; //first 64 digits
+	private static final String KEY = "1415926535897932384626333832795028841971693993751058209749445923"; //first 63 digits
 	private static final String ALPHABET = "RUXi9EKzAM1lqPB3gDhaSyvH8ZVLO6cNJtY0k4wTC7sbfI5uQendxoWrpF2mGj "; //a-z 0-9 A-Z and a space (the space has to be at the end)
 	private static String toTokenize = "";
 	private static String tokenized = "";
@@ -75,9 +75,25 @@ public class Main {
 			
 			int locationNewChar = y + newKeyNum;
 			
-			if((locationNewChar) >=64) {
-				  locationNewChar = locationNewChar - 64; //amount of characters in abc
+			if((locationNewChar) >=63) {
+				  locationNewChar = locationNewChar - 63; //amount of characters in abc
 			}
+			
+			
+			
+			
+			
+			/*int test = 0;
+			while(test < abc.length) {
+				System.out.println("abc " + test + " = " +abc[test]);
+				test++;
+			}
+			
+			
+			System.out.println("LocationNewChar = " + locationNewChar);
+			System.out.println("y = " + y);
+			System.out.println("NewKeyNum = " + newKeyNum);
+			*/
 			
 			char newChar = abc[locationNewChar];
 			
@@ -156,7 +172,7 @@ public class Main {
 			int locationNewChar = y - newKeyNum;
 			
 			if((locationNewChar) < 0) {
-				  locationNewChar = locationNewChar + 64;
+				  locationNewChar = locationNewChar + 63;
 			}
 			
 			char newChar = abc[locationNewChar];

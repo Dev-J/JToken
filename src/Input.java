@@ -8,7 +8,7 @@ public class Input {
 	public Input() {
 		System.out.println("Do you want to Tokenize or De-Tokenize?");
 		String reply = scan.nextLine();
-		if(reply.toLowerCase().contains("tokenize")) {
+		if(reply.toLowerCase().contains("tokenize") && !reply.toLowerCase().contains("de")) {
 			System.out.println("What would you like to Tokenize?");
 			String answer = scan.nextLine();
 			Main.jumble(Main.splitString(answer));
