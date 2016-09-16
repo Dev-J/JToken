@@ -1,8 +1,14 @@
+
 //Version 0.1
 //Currently does not support punctuation/spaces
 //Only supports Strings
 //Does not currently support numerical values
 //To increase the amount of characters it can tokenize use more values of pi. (currently set to 63)
+
+//Version 0.2
+//Currently does not support punctuation
+//To increase the amount of characters it can tokenize use more values of pi. (currently set to 64)
+
 
 public class Main {
 	//key is digits of pi after the '.'
