@@ -7,16 +7,14 @@ Current Version: 0.2
 <h2>Version History</h2>
 //Version 0.1
 <br>
-//Currently does not support punctuation/spaces
+Currently does not support punctuation/spaces
 <br>
-//Only supports Strings
+Only supports Strings
 <br>
-//Does not currently support numerical values
-<br>
-//To increase the amount of characters it can tokenize use more values of pi. (currently set to 63)
+Does not currently support numerical values
 <br>
 //Version 0.2
 <br>
-//Currently does not support punctuation
+Updated to allow use of spaces
 <br>
-//To increase the amount of characters it can tokenize use more values of key. (currently set to 64)
+Default key length updated to 64 from 63
