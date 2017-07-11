@@ -1,2 +1,3 @@
 # JToken
-Tokenisation solution developed in Java. Version 0.2
+Tokenisation solution developed in Java.
+Current Version: 0.2
