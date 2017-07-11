@@ -16,7 +16,5 @@ Updated to allow use of spaces
 Updated to allow use of numerical values
 <br>
 Default key length updated to 64 from 63
-
 <h2> Issues/Updates to come </h2>
-<br>
 Add in punctuation support
