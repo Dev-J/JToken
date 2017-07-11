@@ -6,6 +6,7 @@ Current Version: 0.2
 <br>
 <h2>Version History</h2>
 //Version 0.1
+<br>
 //Currently does not support punctuation/spaces
 <br>
 //Only supports Strings
