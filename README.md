@@ -18,3 +18,5 @@ Updated to allow use of numerical values
 Default key length updated to 64 from 63
 <h2> Issues/Updates to come </h2>
 Add in punctuation support
+<br>
+Add KEY_LENGTH variable
