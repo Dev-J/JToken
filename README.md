@@ -20,3 +20,4 @@ Default key length updated to 64 from 63
 Add in punctuation support
 <br>
 Add KEY_LENGTH variable
+Autogeneration of Key - key identifier
