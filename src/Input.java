@@ -11,11 +11,13 @@ public class Input {
 		if(reply.toLowerCase().contains("tokenize") && !reply.toLowerCase().contains("de")) {
 			System.out.println("What would you like to Tokenize?");
 			String answer = scan.nextLine();
-			Main.jumble(Main.splitString(answer));
+			main.jumble(main.splitString(answer));
 		} else if(reply.toLowerCase().contains("de")) {
 			System.out.println("What would you like to De-Tokenize?");
 			String answer = scan.nextLine();
-			Main.deJumble(Main.splitString(answer));
+			System.out.println("Please provide the Key:");
+			String key = scan.nextLine();
+			main.deJumble(main.splitString(answer),key);
 		} else {
 			System.out.println("Reply not recognised.");
 		}
